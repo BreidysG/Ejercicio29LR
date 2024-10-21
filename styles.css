@@ -38,18 +38,12 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-
 #wordList {
     margin: 20px 0;
     font-weight: bold;
 }
 
-#foundWords,
-#errors,
-#wordList,
-#gridContainer {
-    display: none; /* Ocultos al inicio */
-}
+
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -78,10 +72,12 @@ p {
     background-color: #f08080; /* Color para las palabras erróneas */
     text-decoration: line-through; /* Tachado para indicar error */
 }
-#resultados{
+
+#resultados {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
+
 #foundWords, #errors {
     margin-top: 20px;
     text-align: left;
@@ -119,9 +115,7 @@ button {
 button:hover {
     background-color: #005f73; /* Color de fondo al pasar el mouse */
 }
-#pFinal {
-    font-size: 16px;
-}
+
 .hidden {
-    display: none;
+    display: none !important; 
 }
