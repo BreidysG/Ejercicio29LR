@@ -26,6 +26,7 @@ function startGame() {
     document.getElementById('errors').classList.remove('hidden');
     document.getElementById('timer').classList.remove('hidden');
     document.getElementById('p1').classList.add('hidden');
+    document.getElementById('title').classList.add('hidden');
     document.getElementById('p2').classList.add('hidden');
     document.getElementById('p3').classList.add('hidden');
     document.getElementById('startButton').classList.add('hidden');

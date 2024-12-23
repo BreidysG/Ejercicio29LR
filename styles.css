@@ -3,11 +3,14 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    background-image: url(3.png);
+    background-image: url(1.png);
     background-size: cover;
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -45,10 +48,9 @@ p {
     font-weight: bold;
 }
 
-
 #gridContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
@@ -124,7 +126,7 @@ button:hover {
 /* Estilos responsivos */
 @media (max-width: 768px) {
     #gridContainer {
-        grid-template-columns: repeat(5, 1fr); /* Dos columnas en pantallas más pequeñas */
+        transform: scale(0.6);
     }
 
     h1 {
@@ -146,7 +148,7 @@ button:hover {
 
 @media (max-width: 480px) {
     #gridContainer {
-        grid-template-columns: repeat(2, 0.5fr) ; /* Una sola columna en pantallas pequeñas */
+        transform: scale(0.5);
     }
 
     h1 {
